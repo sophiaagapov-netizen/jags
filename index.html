@@ -4,17 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JAGS International</title>
+  <link rel="icon" type="image/png" href="images/jags_logo.png" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <svg aria-hidden="true" class="icon-sprite" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon-users" viewBox="0 0 24 24"><path d="M16 20v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2" /><circle cx="9.5" cy="7" r="4" /><path d="M22 20v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></symbol>
+    <symbol id="icon-school" viewBox="0 0 24 24"><path d="m3 8 9-4 9 4-9 4-9-4Z" /><path d="M7 10.5v5c0 1.6 2.2 3 5 3s5-1.4 5-3v-5" /><path d="M21 8v6" /></symbol>
+    <symbol id="icon-surgery" viewBox="0 0 24 24"><path d="m14 4 6 6" /><path d="M12 6 4 14l6 6 8-8" /><path d="m5 13 6 6" /></symbol>
+    <symbol id="icon-physician" viewBox="0 0 24 24"><circle cx="12" cy="7" r="4" /><path d="M5 21v-2a7 7 0 0 1 14 0v2" /><path d="M12 15v5" /><path d="M9.5 17.5h5" /></symbol>
+    <symbol id="icon-handshake" viewBox="0 0 24 24"><path d="m7 12 3-3 3 3 2-2a3 3 0 0 1 4 0l2 2" /><path d="m3 12 4 4a3 3 0 0 0 4 0l1-1" /><path d="m13 15 2 2a3 3 0 0 0 4 0l2-2" /><path d="M2 9h4" /><path d="M18 9h4" /></symbol>
+    <symbol id="icon-stethoscope" viewBox="0 0 24 24"><path d="M6 4v5a5 5 0 0 0 10 0V4" /><path d="M11 14v2a4 4 0 0 0 8 0v-2" /><circle cx="19" cy="12" r="2" /><path d="M4 4h4" /><path d="M14 4h4" /></symbol>
+    <symbol id="icon-flask" viewBox="0 0 24 24"><path d="M9 3h6" /><path d="M10 3v6l-5 9a2 2 0 0 0 1.7 3h10.6a2 2 0 0 0 1.7-3l-5-9V3" /><path d="M8 15h8" /></symbol>
+    <symbol id="icon-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M3 12h18" /><path d="M12 3a14 14 0 0 1 0 18" /><path d="M12 3a14 14 0 0 0 0 18" /></symbol>
+    <symbol id="icon-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z" /><circle cx="12" cy="12" r="3" /></symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24"><path d="M4 6h16v12H4z" /><path d="m4 7 8 6 8-6" /></symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M12 21s7-5.2 7-12a7 7 0 1 0-14 0c0 6.8 7 12 7 12Z" /><circle cx="12" cy="9" r="2.5" /></symbol>
+  </svg>
 
   <!-- ===== NAVIGATION ===== -->
   <header class="navbar">
     <div class="container nav-inner">
-      <a href="index.html" class="logo">
-        <div class="logo-icon">🌐</div>
+      <a href="#home" class="logo">
+        <div class="logo-icon"><img src="images/jags_logo.png" alt="" /></div>
         <div class="logo-text">
           <span class="logo-main">JAGS</span>
           <span class="logo-sub">INTERNATIONAL</span>
@@ -22,32 +36,31 @@
       </a>
       <button class="hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
       <nav class="nav-links" id="navLinks">
-        <a href="index.html" class="active">HOME</a>
-        <a href="global-outreach.html">GLOBAL OUTREACH</a>
-        <a href="glaucoma-school.html">GLAUCOMA SCHOOL</a>
-        <a href="glaucocheck.html">GLAUCOCHECK</a>
-        <a href="contact.html">CONTACT</a>
+        <a href="#home" class="active">HOME</a>
+        <a href="#global-outreach">GLOBAL OUTREACH</a>
+        <a href="#glaucoma-school">GLAUCOMA SCHOOL</a>
+        <a href="#contact">CONTACT</a>
       </nav>
     </div>
   </header>
 
   <!-- ===== HERO ===== -->
-  <section class="hero">
+  <section class="hero" id="home">
     <div class="hero-overlay"></div>
-    <img src="images/hero-surgery.jpg" alt="Glaucoma surgery in progress" class="hero-bg" />
+    <img src="images/01-glaucoma-surgery-hero.png" alt="Glaucoma surgery in progress" class="hero-bg" />
     <div class="container hero-content">
       <h1>Advancing Glaucoma Care Through Outreach, Education, and Innovation</h1>
       <p>We collaborate across borders to deliver surgical care, educate eye care professionals, and develop innovative solutions that improve glaucoma care worldwide.</p>
       <div class="hero-buttons">
-        <a href="#" class="btn btn-teal">LEARN MORE &rarr;</a>
-        <a href="contact.html" class="btn btn-outline">CONTACT US</a>
+        <a href="#about" class="btn btn-teal">LEARN MORE &rarr;</a>
+        <a href="#contact" class="btn btn-outline">CONTACT US</a>
       </div>
     </div>
   </section>
 
   <!-- ===== ABOUT ===== -->
    
-  <section class="about section">
+  <section class="about section" id="about">
     <div class="container about-grid">
       <div class="about-left">
         <img src="images/dr-agapov.jpg" alt="Dr. Julia Agapov" class="about-photo" />
@@ -55,7 +68,7 @@
       <div class="about-center">
         <h2>About JAGS International</h2>
         <p>JAGS International is an initiative dedicated to advancing glaucoma care through outreach, education, collaboration, and innovation.</p>
-        <p>Founded by <strong>Dr. Julia Agapov</strong>, JAGS International supports programs that connect physicians, strengthen local capacity, and improve access to quality glaucoma care worldwide.</p>
+        <p>Founded by <strong><a href="https://www.linkedin.com/in/julia-agapov/" target="_blank" rel="noopener" class="text-link">Dr. Julia Agapov</a></strong>, JAGS International supports programs that connect physicians, strengthen local capacity, and improve access to quality glaucoma care worldwide.</p>
       </div>
       <div class="about-right">
         <blockquote>
@@ -74,56 +87,76 @@
       <h2 class="section-title">OUR PILLARS</h2>
       <div class="pillars-grid">
 
-        <div class="pillar-card">
+        <div class="pillar-card" id="global-outreach">
           <div class="pillar-img-wrap">
             <img src="images/global-outreach.jpg" alt="Global Outreach" />
-            <div class="pillar-icon">👥</div>
+            <div class="pillar-icon"><svg class="site-icon"><use href="#icon-users"></use></svg></div>
           </div>
           <h3 class="pillar-heading teal">GLOBAL OUTREACH</h3>
           <p>International collaboration, surgical training, physician education, and humanitarian service.</p>
-          <a href="global-outreach.html" class="learn-more teal">LEARN MORE &rarr;</a>
+         
         </div>
 
         <div class="pillar-card">
           <div class="pillar-img-wrap">
-            <img src="images/glaucoma-school.jpg" alt="Glaucoma School" />
-            <div class="pillar-icon">🎓</div>
+            <img src="images/glaucoma-school.png" alt="Glaucoma School" />
+            <div class="pillar-icon"><svg class="site-icon"><use href="#icon-school"></use></svg></div>
           </div>
           <h3 class="pillar-heading dark">GLAUCOMA SCHOOL</h3>
           <p>Developing a future platform for glaucoma education, certification, and hands-on training through global partnerships.</p>
-          <a href="glaucoma-school.html" class="learn-more dark">LEARN MORE &rarr;</a>
-        </div>
-
-        <div class="pillar-card">
-          <div class="pillar-img-wrap glaucocheck-wrap">
-            <img src="images/glaucocheck-app.jpg" alt="GlaucoCheck App" />
-            <div class="glaucocheck-label">
-              <span class="gc-white">Glauco</span><span class="gc-teal">Check</span><span class="gc-tm">™</span>
-              <span class="gc-app">APP</span>
-            </div>
-          </div>
-          <p>AI-powered glaucoma insights and education tools designed to support clinicians and patients worldwide.</p>
-          <a href="glaucocheck.html" class="learn-more orange">LEARN MORE &rarr;</a>
         </div>
 
       </div>
     </div>
   </section>
 
+  <!-- ===== GLAUCOMA SCHOOL ===== -->
+  <section class="glaucoma-school-detail section" id="glaucoma-school">
+    <div class="container glaucoma-school-grid">
+      <div class="school-copy">
+        <span class="section-kicker">Glaucoma School</span>
+        <h2>Training the next generation of glaucoma care leaders</h2>
+        <p>The inaugural JAGS Glaucoma School program in Uzbekistan brings together international faculty, practical training, and regional collaboration to strengthen glaucoma education across the Alliance.</p>
+        <div class="school-sponsor">
+          <span>Educational Sponsor</span>
+          <img src="images/sentiss.jpeg" alt="SENTISS logo" />
+          <p>Supporting the inaugural JAGS Glaucoma School program in Uzbekistan.</p>
+        </div>
+      </div>
+      <div class="school-details">
+        <div class="program-highlights">
+          <h3>Program Highlights</h3>
+          <ul>
+            <li>3-5 Day Intensive Course</li>
+            <li>International Faculty</li>
+            <li>Lectures &amp; Wet Labs</li>
+            <li>Surgical Training</li>
+            <li>Official Completion Certificate</li>
+            <li>CME Credits (where approved)</li>
+          </ul>
+        </div>
+        <div class="rotating-host">
+          <h3>Rotating Host Model</h3>
+          <p>Beginning in Uzbekistan, future Glaucoma School programs will be hosted by different Alliance member countries.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== IMPACT IN ACTION ===== -->
-  <section class="impact section">
+  <section class="impact section" id="impact">
     <div class="container">
       <h2 class="section-title">IMPACT IN ACTION</h2>
       <div class="impact-slider-wrap">
         <button class="slider-btn prev" id="prevBtn">&#8249;</button>
         <div class="impact-track-outer">
           <div class="impact-track" id="impactTrack">
-            <img src="images/impact1.jpg" alt="Impact photo 1" />
-            <img src="images/impact2.jpg" alt="Impact photo 2" />
-            <img src="images/impact3.jpg" alt="Impact photo 3" />
-            <img src="images/impact4.jpg" alt="Impact photo 4" />
-            <img src="images/impact5.jpg" alt="Impact photo 5" />
-            <img src="images/impact6.jpg" alt="Impact photo 6" />
+            <img src="images/impact1.png" alt="Impact photo 1" />
+            <img src="images/impact2.png" alt="Impact photo 2" />
+            <img src="images/impact3.png" alt="Impact photo 3" />
+            <img src="images/impact4.png" alt="Impact photo 4" />
+            <img src="images/impact5.png" alt="Impact photo 5" />
+            <img src="images/impact6.png" alt="Impact photo 6" />
           </div>
         </div>
         <button class="slider-btn next" id="nextBtn">&#8250;</button>
@@ -138,7 +171,7 @@
   </section>
 
   <!-- ===== REGIONAL INITIATIVES ===== -->
-  <section class="regional section">
+  <section class="regional section" id="regional">
     <div class="container regional-grid">
 
       <!-- Central America -->
@@ -146,16 +179,17 @@
         <h3>CENTRAL AMERICA INITIATIVE</h3>
         <h4 class="teal">HONDURAS &amp; NICARAGUA</h4>
         <p>Working alongside local physicians and partners to provide surgical care, education, and mentorship that strengthens eye care systems and improves patient outcomes.</p>
-        <div class="regional-icons">
-          <div class="ricon"><span>🔬</span><small>Glaucoma Surgery</small></div>
-          <div class="ricon"><span>👨‍⚕️</span><small>Physician Mentoring</small></div>
-          <div class="ricon"><span>🎓</span><small>Resident &amp; Fellow Training</small></div>
-          <div class="ricon"><span>🤝</span><small>Community Outreach</small></div>
-        </div>
-        <a href="global-outreach.html" class="btn btn-teal">LEARN MORE &rarr;</a>
+
         <div class="regional-img-wrap">
-          <img src="images/hospital.jpg" alt="Hospital San Felipe" class="regional-img" />
+          <img src="images/hospital.jpeg" alt="Hospital San Felipe" class="regional-img" />
           <div class="hospital-badge">HOSPITAL<br>SAN FELIPE</div>
+        </div>
+
+        <div class="regional-icons">
+          <div class="ricon"><span><svg class="site-icon"><use href="#icon-surgery"></use></svg></span><small>Glaucoma Surgery</small></div>
+          <div class="ricon"><span><svg class="site-icon"><use href="#icon-physician"></use></svg></span><small>Physician Mentoring</small></div>
+          <div class="ricon"><span><svg class="site-icon"><use href="#icon-school"></use></svg></span><small>Resident &amp; Fellow Training</small></div>
+          <div class="ricon"><span><svg class="site-icon"><use href="#icon-handshake"></use></svg></span><small>Community Outreach</small></div>
         </div>
       </div>
 
@@ -165,27 +199,26 @@
         <h4 class="teal">A REGIONAL COLLABORATION. SHARED VISION.</h4>
         <p>The Central Asia Glaucoma Alliance advances glaucoma care through clinical service, surgical training, physician education, and professional exchange.</p>
         <div class="regional-img-wrap map-wrap">
-          <img src="images/central-asia-map.jpg" alt="Central Asia map" class="regional-img map-img" />
+          <img src="images/central-asia-map.jpeg" alt="Central Asia map" class="regional-img map-img" />
         </div>
         <div class="regional-icons">
-          <div class="ricon"><span>🔬</span><small>Glaucoma Surgery</small></div>
-          <div class="ricon"><span>👨‍⚕️</span><small>Physician Education</small></div>
-          <div class="ricon"><span>🩺</span><small>Surgical Training</small></div>
-          <div class="ricon"><span>🧪</span><small>Wet Labs</small></div>
-          <div class="ricon"><span>🌐</span><small>Conferences &amp; Exchange</small></div>
+          <div class="ricon"><span><svg class="site-icon"><use href="#icon-surgery"></use></svg></span><small>Glaucoma Surgery</small></div>
+          <div class="ricon"><span><svg class="site-icon"><use href="#icon-physician"></use></svg></span><small>Physician Education</small></div>
+          <div class="ricon"><span><svg class="site-icon"><use href="#icon-stethoscope"></use></svg></span><small>Surgical Training</small></div>
+          <div class="ricon"><span><svg class="site-icon"><use href="#icon-flask"></use></svg></span><small>Wet Labs</small></div>
+          <div class="ricon"><span><svg class="site-icon"><use href="#icon-globe"></use></svg></span><small>Conferences &amp; Exchange</small></div>
         </div>
         <div class="participating">
           <strong class="teal">Participating Countries</strong>
           <p>Uzbekistan &bull; Kazakhstan &bull; Kyrgyzstan<br>Tajikistan &bull; Turkmenistan</p>
         </div>
-        <a href="global-outreach.html" class="btn btn-teal">LEARN MORE &rarr;</a>
       </div>
 
     </div>
   </section>
 
   <!-- ===== PARTNERS ===== -->
-  <section class="partners section">
+  <section class="partners section" id="partners">
     <div class="container">
       <h2 class="section-title">OUR PARTNERS &amp; COLLABORATORS</h2>
       <div class="partners-grid">
@@ -193,7 +226,7 @@
         <div class="partners-col">
           <h4 class="teal">CENTRAL AMERICA</h4>
           <div class="partner-item">
-            <div class="partner-logo-circle">👁️</div>
+            <div class="partner-logo-circle"><svg class="site-icon"><use href="#icon-eye"></use></svg></div>
             <div>
               <strong>HONDURAS EYE SURGICAL ALLIES</strong>
               <p>Longstanding outreach partner supporting ophthalmic mission activities in Honduras and Nicaragua.</p>
@@ -204,26 +237,48 @@
         <div class="partners-col">
           <h4 class="teal">CENTRAL ASIA</h4>
           <div class="partner-item">
-            <div class="partner-logo-circle">🌐</div>
+            <div class="partner-logo-circle"><svg class="site-icon"><use href="#icon-globe"></use></svg></div>
             <div>
               <strong>Ophthalmology Society of Uzbekistan</strong>
               <p>(coming soon)</p>
             </div>
           </div>
           <div class="partner-item">
-            <div class="partner-logo-circle">👁️</div>
+            <div class="partner-logo-circle"><svg class="site-icon"><use href="#icon-eye"></use></svg></div>
             <div>
               <strong>Tashkent Eye Center / Glaucoma Center</strong>
               <p>(coming soon)</p>
             </div>
           </div>
           <div class="partner-item">
-            <div class="partner-logo-circle">🎓</div>
+            <div class="partner-logo-circle"><svg class="site-icon"><use href="#icon-school"></use></svg></div>
             <div>
               <strong>Universities &amp; Training Institutions</strong>
               <p>(coming soon)</p>
             </div>
           </div>
+        </div>
+
+        <div class="partners-col">
+          <h4 class="teal">EDUCATIONAL &amp; INDUSTRY PARTNERS</h4>
+          <div class="partner-item">
+            <div class="partner-logo-img">
+              <img src="images/sentiss.jpeg" alt="SENTISS logo" />
+            </div>
+            <div>
+              <strong>SENTISS</strong>
+              <p>Educational sponsor supporting the inaugural JAGS Glaucoma School program in Uzbekistan.</p>
+            </div>
+          </div>
+          <a href="https://www.linkedin.com/company/nova-eye-medical/" target="_blank" rel="noopener" class="partner-item partner-link">
+            <div class="partner-logo-img">
+              <img src="images/nova-eye-medical.png" alt="Nova Eye Medical logo" />
+            </div>
+            <div>
+              <strong>Nova Eye Medical</strong>
+              <p>Industry collaborator supporting glaucoma innovation and education.</p>
+            </div>
+          </a>
         </div>
 
       </div>
@@ -233,12 +288,38 @@
   <!-- ===== CTA BANNER ===== -->
   <section class="cta-banner">
     <div class="cta-bg">
-      <img src="images/footer-children.jpg" alt="Children in community" />
+      <img src="images/footer-children.png" alt="Children in community" />
       <div class="cta-overlay"></div>
     </div>
     <div class="container cta-content">
       <p>Together, we can create a future where glaucoma is detected earlier, treated better, and blindness is prevented.</p>
-      <a href="contact.html" class="btn btn-outline-white">GET INVOLVED</a>
+      <a href="mailto:info@jags-international.org" class="btn btn-outline-white">GET INVOLVED</a>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-copy">
+        <h2>Contact Us</h2>
+        <p>Have a question, partnership idea, or outreach opportunity? Send us a note and we will get back to you.</p>
+        <a href="mailto:info@jags-international.org">info@jags-international.org</a>
+      </div>
+      <form class="contact-form" action="mailto:info@jags-international.org" method="post" enctype="text/plain">
+        <label>
+          Name
+          <input type="text" name="name" autocomplete="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" autocomplete="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit" class="btn btn-teal">SEND MESSAGE</button>
+      </form>
     </div>
   </section>
 
@@ -248,7 +329,7 @@
 
       <div class="footer-brand">
         <div class="logo">
-          <div class="logo-icon">🌐</div>
+          <div class="logo-icon"><img src="images/jags_logo.png" alt="" /></div>
           <div class="logo-text">
             <span class="logo-main">JAGS</span>
             <span class="logo-sub">INTERNATIONAL</span>
@@ -256,27 +337,25 @@
         </div>
         <p class="footer-tagline">Advancing Glaucoma Care Through Outreach, Education, and Innovation</p>
         <div class="footer-social">
-          <a href="#">in</a>
-          <a href="#">f</a>
-          <a href="#">ig</a>
-          <a href="#">▶</a>
+          <a href="https://www.linkedin.com/company/jagsinternational/" target="_blank" rel="noopener" aria-label="JAGS International on LinkedIn">
+            <img src="images/linkedin.png" alt="" class="linkedin-icon" />
+          </a>
         </div>
       </div>
 
       <div class="footer-col">
         <h5>QUICK LINKS</h5>
-        <a href="index.html">Home</a>
-        <a href="global-outreach.html">Global Outreach</a>
-        <a href="glaucoma-school.html">Glaucoma School</a>
-        <a href="glaucocheck.html">GlaucoCheck</a>
-        <a href="contact.html">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#global-outreach">Global Outreach</a>
+        <a href="#glaucoma-school">Glaucoma School</a>
+        <a href="#contact">Contact</a>
       </div>
 
       <div class="footer-col">
         <h5>CONTACT</h5>
-        <p>✉ info@jags-international.org</p>
-        <p>📍 Global Initiatives</p>
-        <p>🌐 www.jags-international.org</p>
+        <p><svg class="footer-contact-icon"><use href="#icon-mail"></use></svg> info@jags-international.org</p>
+        <p><svg class="footer-contact-icon"><use href="#icon-pin"></use></svg> Global Initiatives</p>
+        <p><svg class="footer-contact-icon"><use href="#icon-globe"></use></svg> www.jags-international.org</p>
       </div>
 
       <div class="footer-col">
