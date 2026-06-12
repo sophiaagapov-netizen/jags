@@ -829,7 +829,11 @@ blockquote cite {
   .hero-bg { opacity: 0.30; }
   .hero-content h1 { font-size: 1.5rem; }
   .program-highlights ul { grid-template-columns: 1fr; }
-  .impact-track img { min-width: 140px; height: 140px; }
+  .impact-track img {
+    width: 100%;
+    min-width: 100%;
+    height: 220px;
+  }
   .footer {
     padding-top: 40px;
   }

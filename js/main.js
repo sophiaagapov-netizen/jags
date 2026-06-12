@@ -23,9 +23,9 @@ if (track && dotsWrap && prevBtn && nextBtn) {
   let dots = [];
   const images = track.querySelectorAll('img');
   const total  = images.length;
-  // Show 4 at a time on desktop, 2 on mobile
+  // Show 4 at a time on desktop, 1 on small screens
   function getVisible() {
-    return window.innerWidth < 640 ? 2 : 4;
+    return window.innerWidth <= 640 ? 1 : 4;
   }
   function maxSlide() {
     return Math.max(0, total - getVisible());
